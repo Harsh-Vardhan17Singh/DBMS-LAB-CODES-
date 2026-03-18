@@ -1,0 +1,40 @@
+     **  PRACTIEC  DBMS COMMANDS ON 18 MARCH ***
+
+     **    EXERCISE 1 **
+     
+     1. SELECT Title FROM MOVIE;
+
+     2.SELECT director FROM MOVIE;
+
+     3.SELECT Title,director FROM MOVIE;
+
+     4.SELECT title,year FROM MOVIE ;
+
+     5.SELECT * FROM MOVIE;
+
+      **   EXERCISE 2  **
+      1.SELECT * FROM movies WHERE id = 6;
+      2.SELECT * FROM movies WHERE Year BETWEEN 2000 and  2010 ;
+      3.SELECT * FROM movies WHERE Year  not BETWEEN 2000 and  2010 ;
+      4.SELECT * FROM movies WHERE id< 6;
+
+      **   EXERCISE 3  **
+      1.SELECT * FROM movies WHERE Title LIKE "Toy Story%";
+      2.SELECT * FROM movies WHERE Director LIKE "JOhn Lasseter%";
+      3.SELECT * FROM movies WHERE Director NOT LIKE "JOhn Lasseter%";
+      4.SELECT * FROM movies WHERE Title  LIKE "WALL-%";
+
+
+      **  EXERCISE  4 **
+      
+      1.SELECT  DISTINCT Director FROM movies ORDER BY Director;
+      2.SELECT * FROM movies ORDER BY Year DESC LIMIT 4;
+      3.SELECT * FROM movies ORDER BY Title  LIMIT 5;
+      4.SELECT * FROM movies ORDER BY Title  LIMIT 5 OFFSET 5;
+
+      **  EXERCISE  5 **
+      1.SELECT City,Population FROM north_american_cities WHERE Country = "Canada";
+      2.SELECT City FROM north_american_cities WHERE Country = "United States" ORDER BY Latitude DESC;
+      3.SELECT City FROM north_american_cities WHERE longitude < (SELECT longitude from north_american_cities WHERE city = "Chicago" ) ORDER BY longitude ASC;
+      4.SELECT City FROM north_american_cities WHERE Country = "Mexico" ORDER BY population DESC LIMIT 2;
+      5.
